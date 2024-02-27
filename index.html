@@ -118,7 +118,7 @@
         left: 0;
         text-align: center;
         width: 100%;
-        color: #0D1321;
+        color: rgb(255, 255, 250);
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: large;
         padding: 1rem;
@@ -166,20 +166,24 @@
     
     footer {
         background-color: #81A4CD;
-        padding: 20px 0;
+        padding: 50px 10px;
+    }
+    
+    footer p {
+        font-size: small;
     }
     
     .footer-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        max-width: 1200px;
+        max-width: 100%;
         margin: 0 auto;
         padding: 0 20px;
     }
     
     .footer-logo img {
-        height: 35px;
+        height: 25px;
         padding-right: 20px;
     }
     
@@ -221,18 +225,18 @@
     .footer-social ul li a {
         color: #0D1321;
         text-decoration: none;
-        font-size: 20px;
+        font-size: 10px;
     }
     
     .footer-info {
         text-align: center;
         margin-top: 20px;
         color: #666;
-        font-size: 14px;
+        font-size: 10px;
     }
     
     .footer-social img {
-        height: 25px;
+        height: 15px;
         border-radius: 30px;
     }
     
@@ -762,11 +766,6 @@
         height: 100%
     }
     
-    .body3 {
-        background: linear-gradient(to bottom, rgba(145, 161, 178, 0.4) 0%, rgba(147, 23, 23, 0) 100%);
-        font-family: 'Droid Serif', serif;
-    }
-    
     .blog-card {
         width: 100%;
         height: 500px;
@@ -782,12 +781,12 @@
         box-shadow: 0px 10px 20px -9px rgba(5, 15, 67, 0.5);
         text-align: center;
         transition: all 0.4s;
-        background: url(https://images.unsplash.com/photo-1431540015161-0bf868a2d407?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) center no-repeat;
+        background: url(https://images.unsplash.com/photo-1573167507387-6b4b98cb7c13?q=80&w=2938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) center no-repeat;
         background-size: 100%;
     }
     
     .blog-card a {
-        color: #DBE4EE;
+        color: #0D1321;
         text-decoration: none;
         transition: all 0.2s
     }
@@ -811,10 +810,6 @@
         top: 350px;
         left: 0;
         z-index: 15;
-    }
-    
-    .blog-card:hover {
-        box-shadow: 0px 18px 20px -9px rgba(0, 10, 30, 0.75);
     }
     
     .blog-card:hover .card-info {
@@ -858,7 +853,7 @@
     }
     
     .blog-card h3 a {
-        text-shadow: 0px 0px 10px #81A4CD;
+        text-shadow: 0px 0px 10px #0D1321;
         transition: all 0.2s
     }
     
@@ -886,22 +881,6 @@
         }
     }
     
-    .intro {
-        width: 170px;
-        margin: 0 auto;
-        color: #DBE4EE;
-        font-style: italic;
-        line-height: 18px;
-    }
-    
-    .intro a {
-        color: #DBE4EE
-    }
-    
-    .intro a:hover {
-        text-decoration: underline
-    }
-    
     .card-info {
         box-sizing: border-box;
         padding: 0;
@@ -926,7 +905,7 @@
         color: #0D1321;
         padding: 3px 3px;
         border-radius: 8px;
-        font-size: 1em
+        font-size: 1em;
     }
     
     .card-info a:hover {
@@ -969,7 +948,7 @@
             width: 100%
         }
         .card-info {
-            display: none
+            display: flex;
         }
         .blog-card:hover .title-content,
         .title-content {
@@ -980,9 +959,6 @@
         }
         .blog-card h3 {
             font-size: 1.3em
-        }
-        .intro {
-            font-size: 0.8em
         }
     }
 </style>
@@ -1183,29 +1159,17 @@
             </li>
         </ol>
     </div>
-    <div class="body3">
-        <div class="blog-card spring-fever">
-            <div class="title-content">
-                <h3><a href="#">Partner With Us</a></h3>
-                <div class="intro"> <a href="#">Inspiration</a> </div>
-            </div>
-            <div class="card-info">
-                <h4>join forces with EcoSoft Tissues<br> together, let's embark on a journey of growth and prosperity</h4>
-                <a href="#">Join Hands<span class="licon icon-arr icon-black"></span></a>
-            </div>
-            <div class="gradient-overlay"></div>
-            <div class="color-overlay"></div>
+    <div class="blog-card spring-fever">
+        <div class="title-content">
+            <h3><a href="#">Partner With Us</a></h3>
         </div>
+        <div class="card-info">
+            <h4>join forces with EcoSoft Tissues<br> together, let's embark on a journey of growth and prosperity</h4>
+            <a href="#">Join Hands<span class="licon icon-arr icon-black"></span></a>
+        </div>
+        <div class="gradient-overlay"></div>
+        <div class="color-overlay"></div>
     </div>
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
 
     <footer>
         <div class="footer-container">
@@ -1225,7 +1189,7 @@
                 <ul>
                     <li>
                         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAbFBMVEUVfcP///8AdMAAd8Hz+fzv9fr6/f4fgMXQ4fAAc78AecHm7/eLtdt1qdZ+r9gAcb7Z5/NBj8uav+Bbm9AphcfH2+260ummxuOfwuE6jMrd6vVRls5moNJtpNNWmc8pg8W+1uuwzOYAabuQud2SFzxcAAAEJklEQVR4nO3da3uiMBCGYQRFHA8RPFXRba3//z9uddfDamsG4hAm+z7fpbkvlGiBEHVCL/I9APH+P2FXfekT4XS0piTWXkL5YfOtcJobisKITLl5FBbB+I6RWd0LxwPfg3pxZvSvsAgN+EVc3Qqnxvd4BDLDG2HuezQS0ewqzELcheedeBJOQjqMXkuKi3DueywyUXkWponvsUh1FvZi3yMRKglfmEKoPQj1B6H+INQfhPqDUH8Q6g9C/UGoPxVCulTjxa0WUhIP4miez7a73W67nf0q83z+3o8oNoPTSUIOubXCL8X77m2xuT+beyzt9jbZYrk6jGdr64baKaRBNF52v7E9NrbtxjYKk3icsXRKhXF/9d07Mxhh0t9X4OkTUlxU82kTxmWvKlCX0LxV9qkSEk1rABUJaV79HapKSOsqU4RCIc1rAtUII95XNL3CeFgXqERoPmoDdQiTSX2gDmHfAahCaBaBC/9eWxew0NQ/juoQ0tgJqEDouAvbL3T8FCoQDpwOpBqETnOhBiGNbALtwkGt3/WahO53zbVc6DoZtl+Y7EMXVpnuh4t9MZo8ZD355HkfMnXpcksmThJ6zP43vApLHvCN4vq3u3gVEuvHfXftNDSvwoTzb/xu5Ha7kldhzPlSmjvej+VXyPhGs3cdl1fhgHGqou/6R/x+Du3/6c6c79z1eyy1n6wYOd8V6Xc+tL9J3W/dbbvQ/cZWr0L7D/yu+83JLRcO3ZcIaLlw6j6qlgszCO1BKBqEELKCUDQIIWQFoWgQQsgKQtEghJAVhKJBqENIgx8z9pPc2efPLz/lX0iT3vDnrML0yYuP9d79C50v63qe/ysVhIU9+9tUuZBxJFIuXAYvLOxrkioXWq9qUy8sgxfap0PtQsYpYt3CYfBCzhdz3cI9YwFr3cJDC1bgkRUypkPlQs4VU7qFnBGoFnY5Y1YtZF0xpVq4CH4fcqZD3ULOdKhbuA1eaF9wT7uQNQLNQt4FxJqFG9YFxJqFH6whaxauWI830izkPYNLs5A1HaoW8p4yplnIG7H8OeAnz0MlKyL7fPJy3gBwHl80CCFkBaFoEELICkLRIISQFYSiQQghKwhFgxBCVhCKBiGErCAUDUIIWUEoGoQQsoJQNAghZAWhaBBCyApC0SCEkBWEokEIISsIRYMQQlYQigYhhKwgFA1CCFlBKBqEELKCUDQIIWQFoWgQQsjqtPD7UZiyFgp5bY0Io7OQucrES2tCSOVFyFsL5aU1IUyKizBzf2xr1ZoQmuFF+IKHC1etASHNOldh8zuxAeGfXfhX2Dm4P3y3WvJCs+rcCjvjhoniQnNe/+cs7BSm0QOqsJDOe/BG2JmWTRpFhWRm16e8RDfbnI7WlDQTYxWlxWfNbVN+2NxsJ7rbbld96Z3oXhheEOrvN+bGaNyBvxVbAAAAAElFTkSuQmCC">
-                        <ahref="#"><i class="fab fa-facebook-f"></i>facebook</a>
+                        <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
                     </li>
                     <li>
                         <img src="data:image/png;base64,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">
@@ -1240,20 +1204,20 @@
             <div class="footer">
                 <ul>
                     <li>
-                        <p>📞 +92 300 402 2530</p>
+                        <p>0300 402 2530</p>
                     </li>
                     <li>
-                        <p>📞 +92 306 115 1155</p>
+                        <p>0306 115 1155</p>
                     </li>
                     <li>
-                        <p>📬 ecosoft@gmail.com</p>
+                        <p>ecosoft@gmail.com</p>
                     </li>
                 </ul>
 
             </div>
         </div>
         <div class="footer-info">
-            <p>&copy; 2024 ecosoft.com.pk All Rights Reserved. Designed & Developed By Umar</p>
+            <p>&copy; 2024 ecosoft.com.pk All Rights Reserved. Designed & Developed By UAS Developers</p>
         </div>
     </footer>
 
