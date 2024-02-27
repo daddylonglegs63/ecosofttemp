@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Slider</title>
+
+    <title>EcoSoft</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <style>
@@ -117,10 +118,10 @@
         left: 0;
         text-align: center;
         width: 100%;
-        color: #f0f0f0;
+        color: #0D1321;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: xx-large;
-        padding: 5rem;
+        font-size: large;
+        padding: 1rem;
         box-sizing: border-box;
     }
     
@@ -155,13 +156,6 @@
         background-color: #000000;
     }
     
-    .imagescroll-container {
-        width: auto;
-        height: 100px;
-        overflow: hidden;
-        position: relative;
-    }
-    
     .imagescroll-container img {
         width: auto;
         height: 100%;
@@ -171,7 +165,7 @@
     }
     
     footer {
-        background-color: #f0f0f0;
+        background-color: #81A4CD;
         padding: 20px 0;
     }
     
@@ -185,7 +179,8 @@
     }
     
     .footer-logo img {
-        height: 50px;
+        height: 35px;
+        padding-right: 20px;
     }
     
     .footer-links ul {
@@ -238,6 +233,7 @@
     
     .footer-social img {
         height: 25px;
+        border-radius: 30px;
     }
     
     * {
@@ -257,9 +253,10 @@
     
     .container-ac {
         height: 400px;
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: start;
+        justify-content: center;
     }
     
     .card-ac {
@@ -340,10 +337,6 @@
     
     .card-ac[for="c3"] {
         background-image: url('https://images.unsplash.com/photo-1528747045269-390fe33c19f2?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YWJvdXQlMjB1c3xlbnwwfHwwfHx8MA%3D%3D');
-    }
-    
-    .card-ac[for="c4"] {
-        background-image: url('https://images.unsplash.com/photo-1493612276216-ee3925520721?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGhpbmtpbmd8ZW58MHx8MHx8fDA%3D');
     }
     
     .navbar-drop {
@@ -598,8 +591,6 @@
         width: 100%;
         height: 200px;
         object-fit: cover;
-        border-bottom-right-radius: 20px;
-        border-bottom-left-radius: 20px;
     }
     
     .card h2 {
@@ -1170,16 +1161,6 @@
                     </div>
                 </div>
             </label>
-            <input type="radio" name="slide" id="c4">
-            <label for="c4" class="card-ac">
-                <div class="row">
-                    <div class="icon">4</div>
-                    <div class="description">
-                        <h4>Query</h4>
-                        <p>Whats going on inside your head? tell us</p>
-                    </div>
-                </div>
-            </label>
         </div>
     </div>
     <div class="body">
@@ -1225,31 +1206,13 @@
     <br>
     <br>
     <br>
-    <div class="imagescroll-container">
-        <img src="https://ecosoft.com.pk/wp-content/uploads/2023/01/10.jpg">
-        <img src="https://ecosoft.com.pk/wp-content/uploads/2023/01/9.jpg">
-        <img src="https://ecosoft.com.pk/wp-content/uploads/2023/01/8.jpg">
-        <img src="https://ecosoft.com.pk/wp-content/uploads/2023/01/6.jpg">
-        <img src="https://ecosoft.com.pk/wp-content/uploads/2023/01/7.jpg">
-        <img src="https://ecosoft.com.pk/wp-content/uploads/2023/01/5.jpg">
-        <img src="https://ecosoft.com.pk/wp-content/uploads/2023/01/4.jpg">
-        <img src="https://ecosoft.com.pk/wp-content/uploads/2023/01/3.jpg">
-        <img src="https://ecosoft.com.pk/wp-content/uploads/2023/01/2.jpg">
-        <img src="https://ecosoft.com.pk/wp-content/uploads/2023/01/1.jpg">
-        <img src="https://ecosoft.com.pk/wp-content/uploads/2023/06/pj-logo.png">
-        <img src="https://ecosoft.com.pk/wp-content/uploads/2023/06/cheezious-logo.png">
-        <img src="https://ecosoft.com.pk/wp-content/uploads/2023/06/pf-logo.png">
-        <img src="https://ecosoft.com.pk/wp-content/uploads/2023/06/nishat-logo.png">
-        <img src="https://ecosoft.com.pk/wp-content/uploads/2023/06/od-lopgo.png">
-
-    </div>
 
     <footer>
         <div class="footer-container">
             <div class="footer-logo">
-                <img src="https://ecosoft.com.pk/wp-content/uploads/2023/01/logo.png" alt="Your Logo">
+                <img src="https://ecosoft.com.pk/wp-content/uploads/2023/01/logo.png">
             </div>
-            <!--<div class="footer-links">
+            <!-- <div class="footer-links">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Products</a></li>
